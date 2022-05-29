@@ -17,16 +17,25 @@ body {
 }
 
 .container {
-  padding: 1rem;
+  padding: 10rem 1rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
+  position: relative;
 }
 @media (min-width: 1000px) {
   .container {
     width: 1000px;
     margin: auto;
   }
+}
+.container input {
+  width: 47%;
+  position: absolute;
+  top: 10px;
+}
+.container input:last-of-type {
+  right: 0;
 }
 .container .card {
   border: 2px solid var(--main-color);
